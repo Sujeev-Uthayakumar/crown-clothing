@@ -6,8 +6,6 @@ import FormInput from "../form-input/FormInput";
 import CustomButton from "../custom-button/CustomButton";
 
 import { auth, createUserProfileDocument } from "../../firebase/firebase";
-import { dontWaitFor } from "workbox-core/_private";
-
 class SignUp extends React.Component {
   constructor() {
     super();
@@ -25,7 +23,7 @@ class SignUp extends React.Component {
 
     const { displayName, email, password, confirmPassword } = this.state;
 
-    if (password != confirmPassword) {
+    if (password !== confirmPassword) {
       alert("Password's don't match");
       return;
     }
