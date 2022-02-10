@@ -7,7 +7,6 @@ const StripeButton = ({ price }) => {
     "pk_test_51KRd3dAnfsqHLtn9lJv1LZCcOvDZXTkxE9ebEALlKRm8YsQCapUSSwL4hcXcalolltoPOVSWP6nZndWfmXkLBzov00haY6hgYG";
 
   const onToken = (token) => {
-    console.log(token);
     alert("Payment Successful!");
   };
 
