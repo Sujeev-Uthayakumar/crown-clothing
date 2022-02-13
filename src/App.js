@@ -10,6 +10,7 @@ import ShopPage from "./pages/shoppage/ShopPage";
 import Header from "./components/header/Header";
 import AuthPage from "./pages/authpage/AuthPage";
 import CheckoutPage from "./pages/checkoutpage/CheckoutPage";
+
 import { setCurrentUser } from "./redux/user/userActions";
 import { auth, createUserProfileDocument } from "./firebase/firebase";
 import { selectCurrentUser } from "./redux/user/userSelector";
